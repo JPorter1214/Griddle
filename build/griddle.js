@@ -2105,7 +2105,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.verifyProps();
 	    },
 	    sort: function (event) {
-	        this.props.sortSettings.changeSort(event.target.dataset.title || event.target.parentElement.dataset.title);
+				if(event.target.dataset){
+					this.props.sortSettings.changeSort(event.target.dataset.title || event.target.parentElement.dataset.title);
+				} else {
+					this.props.sortSettings.changeSort(event.target.parentElement.attributes["data-title"].value);
+				}
 	    },
 	    toggleSelectAll: function (event) {
 	        this.props.multipleSelectionSettings.toggleSelectAll();
