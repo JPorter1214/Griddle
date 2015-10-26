@@ -1,5 +1,5 @@
 {
-  "name": "griddle-react",
+  "name": "icg-griddle-react",
   "version": "0.2.14",
   "description": "Griddle - A fast and flexible grid component for React.",
   "keywords": [
@@ -52,11 +52,22 @@
   "jest": {
     "rootDir": "scripts",
     "scriptPreprocessor": "../node_modules/6to5-jest",
-    "testFileExtensions": ["es6", "js"],
-    "moduleFileExtensions": ["js", "json", "es6"],
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
     "unmockedModulePathPatterns": [
       "react"
     ]
   },
-  "homepage": "https://github.com/GriddleGriddle/Griddle"
+  "homepage": "https://github.com/GriddleGriddle/Griddle",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  }
 }
